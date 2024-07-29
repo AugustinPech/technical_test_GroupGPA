@@ -16,7 +16,7 @@ Build a mini website using PHP8.3-FPM and Bootstrap to display data from the Fak
 
 ## How i intend to do it
 ### Timing
-I started to work a few minutes ago on Monday the 29th of july 2024 at 16h20.
+I started to work a few minutes ago on Monday the 29th of july 2024 around 16h20.
 I have a few days off, which i intend to delegate to this work. I start with an overview of how i planned to work.
 I will spend a few hours today working on the project initialization.
 Additionaly , i will work 2 full days tomorrow (tuesday) and the day after tomorow (wenesday) for a total of ~ 20h.
@@ -27,4 +27,27 @@ I have a Windows 10 personal computer on which i installed today Oracle VirtualB
 
 I work on a virtual machine running ubuntu 22.04.
 
-I used a script `scripts/initialization.sh` I made a few weeks ago to install PHP8.3-FPM and Apache2 on the VM. (you will find the scripts i made in `scripts/`)
+I used a script `scripts/initialization.sh` I made a few weeks ago (for another excercice) to install PHP8.3-FPM and Apache2 on the VM. (you will find the scripts i made in `scripts/`)
+
+### Methodology
+
+#### Setting a workflow
+I intend to spend some time working on the network interface to be able to access the VM's "website" from the host. It will provide a much more confortable workspace as i have a rather small screen dedicated to the VM.
+
+#### The initial state
+The script i used sets up a vhost and the file system to start working on an RMVC structure.
+By running the script I only have an `index.php` in the `src/` directory.
+
+#### Fetching data
+I will have to find out how to fetch data from a api using only PHP code. For now i always used JS code to request API.
+
+In all the php exercices I had to work on i had a mariaDB database running on the host.
+
+#### Build the views
+
+#### Routing
+
+#### Add style
+
+#### Setting up a good file system
+I know the FS implemented by my original script is not a very good pratice so i will try to make it better by setting up a `public/` directory to separate sensitive contents from the front controller.
