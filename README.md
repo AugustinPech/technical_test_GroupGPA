@@ -30,7 +30,16 @@ I work on a virtual machine running ubuntu 22.04.
 I used a script `scripts/initialization.sh` I made a few weeks ago (for another excercice) to install PHP8.3-FPM and Apache2 on the VM. (you will find the scripts i made in `scripts/`)
 
 ### Methodology
-
+```mermaid
+flowchart LR
+A("Make it
+work")
+B("Make it
+right")
+C("Make it
+nice")
+A--> B--> C
+```
 #### Setting a workflow
 I intend to spend some time working on the network interface to be able to access the VM's "website" from the host. It will provide a much more confortable workspace as i have a rather small screen dedicated to the VM.
 
@@ -39,15 +48,24 @@ The script i used sets up a vhost and the file system to start working on an RMV
 By running the script I only have an `index.php` in the `src/` directory.
 
 #### Fetching data
+##### first time
 I will have to find out how to fetch data from a api using only PHP code. For now i always used JS code to request API.
 
 In all the php exercices I had to work on i had a mariaDB database running on the host.
-
-#### Build the views
+##### testing
+I will have to test the "APIcontroller" for multiple endpoints.
 
 #### Routing
+When the controller and the view for a feature are ready I will add the route to the router.
 
-#### Add style
+#### Build the views
+I will start with really simple views , just showing the raw data.
+
+I will create some layouts for head, header and footer.
+Then I will add the Bootstrap 5 cdn.
+Later I might add a proper installation of Bootstrap.
 
 #### Setting up a good file system
 I know the FS implemented by my original script is not a very good pratice so i will try to make it better by setting up a `public/` directory to separate sensitive contents from the front controller.
+
+#### Add style
