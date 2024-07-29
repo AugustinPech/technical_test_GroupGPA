@@ -1,4 +1,5 @@
 <?php
+echo 'router.php  <br>';
 class Router {
     private $routes = [
         'home' => '../src/Controllers/HomeController.php',
