@@ -15,7 +15,7 @@ require_once 'layouts/head.tpl.php';
 require_once 'layouts/header.tpl.php';
 ?>
 <div class="text-secondary text-truncate">
-    <?= $product['category'] ?> > <?= $product['title'] ?>
+    <a class="link-secondary" style="text-decoration: none;" href="?route=category&category=<?= $product['category'] ?>"><?= $product['category'] ?></a> > <?= $product['title'] ?>
 </div>
 <div class="p-2 gap-4 d-flex flex-column flex-md-row justify-content-between align-items-stretch">
     <div class=" d-flex flex-column justify-content-between align-items-center" style="min-width: 30%;">

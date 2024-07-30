@@ -7,7 +7,7 @@
     <p class="card-text text-truncate w-100""><?= $product['description']; ?></p>
     <div class="d-flex flex-row justify-content-around">
       <a href="?route=product&product=<?= $product['id'] ?>" class=" col-5 btn btn-primary">See more</a>
-      <button class="col-5 btn btn-danger"><?= $product['price'] ?> €</button>
+      <button class="col-5 btn btn-warning"><?= $product['price'] ?> €</button>
     </div>
   </div>
 </div>
