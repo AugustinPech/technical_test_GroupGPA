@@ -1,6 +1,6 @@
 <?php
 namespace App\Controllers;
-    class ApiController {
+    class APIController {
         private $apiUrl = 'https://fakestoreapi.com';
         // * @throws [BadRequest] [If the request fails]
         /**
@@ -20,18 +20,14 @@ namespace App\Controllers;
             // }
 
             curl_close($ch);
-                    
-            $responseString = (string) $response;
-            $responseCroped = str_replace('"', '',$responseString);
-            $responseCroped = str_replace('[', '',$responseCroped);
-            $responseCroped = str_replace(']', '',$responseCroped);
+            
+            $decodedResponse = json_decode($response, true);
+            // $responseString = (string) $response;
+            // $responseCroped = str_replace('"', '',$responseString);
+            // $responseCroped = str_replace('[', '',$responseCroped);
+            // $responseCroped = str_replace(']', '',$responseCroped);
 
-            $decodedResponse = explode(',',  $responseCroped);
-            // var_dump($responseString);
-            // echo "<br>";
-            // var_dump($responseCroped);
-            // echo "<br>";
-            // var_dump($decodedResponse);
+            // $decodedResponse = explode(',',  $responseCroped);
 
 
             return $decodedResponse;
