@@ -3,9 +3,9 @@
 </body>
 <section class="">
   <!-- Footer -->
-  <footer class="bg-body-tertiary text-center text-md-start">
+  <footer class="bg-body-tertiary text-center text-md-start bg-secondary">
     <!-- Grid container -->
-    <div class="container p-4">
+    <div class="container p-4 ">
       <!--Grid row-->
       <div class="row">
         <!--Grid column-->
