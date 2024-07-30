@@ -1,0 +1,26 @@
+/* Default: Display carousel */
+#carouselButton,
+#carouselCatalog {
+  display: block;
+  
+}
+#flexCatalog {
+  display: none;
+}
+.card {
+    box-shadow: 0 5px 7px rgba(0, 123, 255, 0.2);
+}
+#productImg {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+@media (min-width: 768px) {
+    #carouselCatalog,
+    #carouselButton {
+        display: none
+    }
+    #flexCatalog {
+        display: flex;
+    }
+}
