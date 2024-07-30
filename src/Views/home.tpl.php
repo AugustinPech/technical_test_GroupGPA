@@ -9,13 +9,13 @@ $metakeywords = 'homepage, home, page';
 ?>
 
 <div>
-    <h1>Cool Home Page</h1>
+    <h1>Home Page</h1>
     <p>Welcome to the homepage of the website.</p>
     <p>Here are the categories of products available:</p>
     <ul>
         <?php
         foreach ($listCategories as $id => $name) : ?>
-            <li><a href="?route=category&id=<?= $id ?>"><?= $name ?></a></li>
+            <li><a href="?route=category&category=<?= $name ?>"><?= $name ?></a></li>
         <?php endforeach; ?>
     </ul>
 </div>

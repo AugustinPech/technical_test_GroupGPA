@@ -1,7 +1,7 @@
 <?php
 namespace App\Router;
-use App\Controllers\HomeController;
 
+// use App\Controllers\HomeController;
 class Router {
     private $routes = [
         'home' => '../src/Controllers/HomeController.php',
@@ -13,7 +13,8 @@ class Router {
         switch ($requestedRoute) {
             case 'home':
                 $route= $this->routes[$requestedRoute];
-                $controller = new HomeController();
+                require_once $route;
+                $controller = new \App\Controllers\HomeController();
                 $controller->index();
                 break;
             case '404':
