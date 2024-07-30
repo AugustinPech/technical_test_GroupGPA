@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+// echo 'ProductController.php <br>';
 class ProductController {
     private $productModel;
     public function productDetail($id) {

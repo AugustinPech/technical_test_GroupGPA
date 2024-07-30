@@ -1,11 +1,11 @@
 <?php
-echo 'categoryCatalog.tpl.php <br>';
+// echo 'categoryCatalog.tpl.php <br>';
 $metatitle = $category.' Catalog';
 $metadescription = 'This shows the products available in the '.$category.' category';
 $metakeywords = $category.', catalog, products';
 
-// TODO : include Head
-// TODO : include Header
+require_once 'layouts/head.tpl.php';
+require_once 'layouts/header.tpl.php';
 ?>
 
 <div>
@@ -23,3 +23,6 @@ $metakeywords = $category.', catalog, products';
         <?php endforeach; ?>
     </ul>
 </div>
+
+<?php
+require_once 'layouts/footer.tpl.php';

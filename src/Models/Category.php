@@ -1,6 +1,6 @@
 <?php
 namespace App\Models;
-echo 'Category.php  <br>';
+// echo 'Category.php  <br>';
 // use App\Controllers\APIController;
 
 class Category {

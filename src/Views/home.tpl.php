@@ -1,11 +1,11 @@
 <?php
-echo 'home.tpl.php <br>';
+// echo 'home.tpl.php <br>';
 $metatitle = 'HomePage';
 $metadescription = 'This is the homepage of the website';
 $metakeywords = 'homepage, home, page';
 
-// TODO : include Head
-// TODO : include Header
+require_once 'layouts/head.tpl.php';
+require_once 'layouts/header.tpl.php';
 ?>
 
 <div>
@@ -19,3 +19,5 @@ $metakeywords = 'homepage, home, page';
         <?php endforeach; ?>
     </ul>
 </div>
+<?php
+require_once 'layouts/footer.tpl.php';
