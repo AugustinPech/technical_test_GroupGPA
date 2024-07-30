@@ -31,7 +31,7 @@ require_once 'layouts/header.tpl.php';
         </button>
     </div>
 
-    <div id="flexCatalog" class=" flex-row justify-content-center align-items-center flex-wrap px-4">
+    <div id="flexCatalog" class="gap-1 flex-row justify-content-center align-items-center flex-wrap px-4">
         <?php foreach ($listProducts as $index => $product) : ?>
             <?php include 'productCard.tpl.php'; ?>
         <?php endforeach; ?>
