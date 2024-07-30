@@ -55,6 +55,9 @@ In all the php exercices I had to work on i had a mariaDB database running on th
 ##### testing
 I will have to test the "APIcontroller" for multiple endpoints.
 
+#### Setting up a good file system
+I know the FS implemented by my original script is not a very good pratice so i will try to make it better by setting up a `public/` directory to separate sensitive contents from the front controller.
+
 #### Routing
 When the controller and the view for a feature are ready I will add the route to the router.
 
@@ -64,8 +67,5 @@ I will start with really simple views , just showing the raw data.
 I will create some layouts for head, header and footer.
 Then I will add the Bootstrap 5 cdn.
 Later I might add a proper installation of Bootstrap.
-
-#### Setting up a good file system
-I know the FS implemented by my original script is not a very good pratice so i will try to make it better by setting up a `public/` directory to separate sensitive contents from the front controller.
 
 #### Add style

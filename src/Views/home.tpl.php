@@ -1,0 +1,23 @@
+<?php
+// echo 'home.tpl.php <br>';
+$metatitle = 'HomePage';
+$metadescription = 'This is the homepage of the website';
+$metakeywords = 'homepage, home, page';
+
+require_once 'layouts/head.tpl.php';
+require_once 'layouts/header.tpl.php';
+?>
+
+<div>
+    <h1>Home Page</h1>
+    <p>Welcome to the homepage of the website.</p>
+    <p>Here are the categories of products available:</p>
+    <ul>
+        <?php
+        foreach ($listCategories as $id => $name) : ?>
+            <li><a href="?route=category&category=<?= $name ?>"><?= $name ?></a></li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+<?php
+require_once 'layouts/footer.tpl.php';

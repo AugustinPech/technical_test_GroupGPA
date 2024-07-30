@@ -43,9 +43,9 @@ sudo touch /etc/apache2/sites-available/"$project_name".conf
 sudo tee /etc/apache2/sites-available/"$project_name".conf << EOF
 <VirtualHost *:80>
     ServerName $project_name.local
-    DocumentRoot /var/www/$project_name/src
+    DocumentRoot /var/www/$project_name/public
 
-    <Directory /var/www/$project_name/src>
+    <Directory /var/www/$project_name/public>
         Options Indexes FollowSymLinks
         AllowOverride All
         Require all granted
