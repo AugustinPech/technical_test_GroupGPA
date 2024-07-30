@@ -4,8 +4,8 @@ $metatitle = $product['title'];
 $metadescription = $product['description'];
 $metakeywords = $product['category'].', '.$product['title'].', product';
 
-// TODO : include Head
-// TODO : include Header
+require_once 'layouts/head.tpl.php';
+require_once 'layouts/header.tpl.php';
 // var_dump ($product);
 ?>
 
@@ -18,4 +18,4 @@ $metakeywords = $product['category'].', '.$product['title'].', product';
 </div>
 
 <?php
-// TODO : include Footer
+require_once 'layouts/footer.tpl.php';
