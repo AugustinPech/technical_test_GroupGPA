@@ -32,7 +32,7 @@
                             <?php
                             foreach ($listProducts as $product) : ?>
                                 <li>
-                                    <a href="?route=product&product=<?= $product['id'] ?>"> <!-- TODO : make the name shorter with a regex, maybe -->
+                                    <a href="?route=product&product=<?= $product['id'] ?>" class= "d-block text-truncate">
                                         <?= $product['title'] ?>
                                     </a>
                                 </li>
@@ -48,3 +48,4 @@
         </div>
     </nav>
 </header>
+<main class="p-2">

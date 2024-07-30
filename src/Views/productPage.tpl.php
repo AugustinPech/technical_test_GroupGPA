@@ -16,6 +16,6 @@ require_once 'layouts/header.tpl.php';
     <p>category: <?= $product['category'] ?></p>
     <p>rating: <?= var_dump($product['rating']) ?></p>
 </div>
-
+<!-- <?= $card ?> -->
 <?php
 require_once 'layouts/footer.tpl.php';
