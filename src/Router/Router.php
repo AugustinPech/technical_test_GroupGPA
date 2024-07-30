@@ -7,6 +7,7 @@ class Router {
     private $routes = [
         'home' => '../src/Controllers/HomeController.php',
         'category'=> '../src/Controllers/CategoryCatalogController.php',
+        'product' => '../src/Controllers/ProductController.php',
         '404' => '../src/Views/Errors/404.php'
     ];
     public function route($requestedRoute, $requestedCategory, $requestedProductId) {

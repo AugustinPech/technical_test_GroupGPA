@@ -3,7 +3,7 @@
 namespace  App\Models;
 
 class Product {
-    public function detailsofOneProduct($id) {
+    public function detailsOfOneProduct($id) {
         $product = new \App\Controllers\APIController();
         $product = $product->get('/products/' . $id);
         return $product;
