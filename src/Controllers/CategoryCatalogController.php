@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-echo 'CategoryCatalogController.php  <br>';
+// echo 'CategoryCatalogController.php  <br>';
 class CategoryCatalogController {
     private $categoryModel;
     public function productsFromCategory ($category) {

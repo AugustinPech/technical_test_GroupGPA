@@ -1,6 +1,7 @@
 <?php
 
 namespace  App\Models;
+// echo 'Product.php <br>';
 
 class Product {
     public function detailsOfOneProduct($id) {

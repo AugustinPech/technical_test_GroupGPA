@@ -1,5 +1,5 @@
 <?php
-echo 'home.tpl.php <br>';
+// echo 'home.tpl.php <br>';
 $metatitle = 'HomePage';
 $metadescription = 'This is the homepage of the website';
 $metakeywords = 'homepage, home, page';

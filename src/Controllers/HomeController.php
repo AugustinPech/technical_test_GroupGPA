@@ -1,6 +1,6 @@
 <?php
 namespace App\Controllers;
-echo 'homecontroller.php <br>';
+// echo 'homecontroller.php <br>';
 
 // use App\Models\Category;
 class Homecontroller

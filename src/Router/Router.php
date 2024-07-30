@@ -2,6 +2,7 @@
 namespace App\Router;
 
 // use App\Controllers\HomeController;
+// echo 'router.php  <br>';
 
 class Router {
     private $routes = [
@@ -11,7 +12,6 @@ class Router {
         '404' => '../src/Views/Errors/404.php'
     ];
     public function route($requestedRoute, $requestedCategory, $requestedProductId) {
-        echo 'router.php  <br>';
         $requestedRoute = isset($requestedRoute) ? (array_key_exists($requestedRoute, $this->routes) ? $requestedRoute : '404' ) : 'home';
         switch ($requestedRoute) {
             case 'home':

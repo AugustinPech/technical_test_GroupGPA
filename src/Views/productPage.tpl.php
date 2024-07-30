@@ -1,5 +1,5 @@
 <?php
-echo 'productPage.tpl.php <br>';
+// echo 'productPage.tpl.php <br>';
 $metatitle = $product['title'];
 $metadescription = $product['description'];
 $metakeywords = $product['category'].', '.$product['title'].', product';
