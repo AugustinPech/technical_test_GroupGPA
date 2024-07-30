@@ -9,7 +9,7 @@ class Router {
         'category'=> '../src/Controllers/CategoryCatalogController.php',
         '404' => '../src/Views/Errors/404.php'
     ];
-    public function route($requestedRoute, $requestedCategory) {
+    public function route($requestedRoute, $requestedCategory, $requestedProductId) {
         echo 'router.php  <br>';
         $requestedRoute = isset($requestedRoute) ? (array_key_exists($requestedRoute, $this->routes) ? $requestedRoute : '404' ) : 'home';
         switch ($requestedRoute) {
@@ -22,8 +22,14 @@ class Router {
             case 'category':
                 $route= $this->routes[$requestedRoute];
                 require_once $route;
-                $controller = new \App\Controllers\CatalogController();
+                $controller = new \App\Controllers\CategoryCatalogController();
                 $controller->productsFromCategory($requestedCategory);
+                break;
+            case 'product':
+                $route= $this->routes[$requestedRoute];
+                require_once $route;
+                $controller = new \App\Controllers\ProductController();
+                $controller->productDetail($requestedProductId);
                 break;
             case '404':
                 $requestedRoute = '404';

@@ -26,9 +26,7 @@ namespace App\Controllers;
             // $responseCroped = str_replace('"', '',$responseString);
             // $responseCroped = str_replace('[', '',$responseCroped);
             // $responseCroped = str_replace(']', '',$responseCroped);
-
             // $decodedResponse = explode(',',  $responseCroped);
-
 
             return $decodedResponse;
         }

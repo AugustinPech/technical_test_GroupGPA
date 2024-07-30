@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 echo 'CategoryCatalogController.php  <br>';
-class CatalogController {
+class CategoryCatalogController {
     private $categoryModel;
     public function productsFromCategory ($category) {
         $this->categoryModel = new \App\Models\Category();
