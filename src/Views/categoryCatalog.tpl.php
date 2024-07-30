@@ -1,5 +1,5 @@
 <?php
-echo 'home.tpl.php <br>';
+echo 'categoryCatalog.tpl.php <br>';
 $metatitle = $category.' Catalog';
 $metadescription = 'This shows the products available in the '.$category.' category';
 $metakeywords = $category.', catalog, products';
