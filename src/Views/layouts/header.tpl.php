@@ -48,4 +48,4 @@
         </div>
     </nav>
 </header>
-<main class="p-2">
+<main class="px-2 mx-2">
