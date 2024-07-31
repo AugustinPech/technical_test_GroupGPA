@@ -41,7 +41,7 @@ require_once 'layouts/header.tpl.php';
 
         <p>Livré chez Group-GPA</p>
 
-        <form title="fake" action="">
+        <form title="fake" method="post" action="?route=addToCart">
             <div class="d-flex gap-2 flex-column justify-content-between align-items-stretch">
                 <label for="quantity">Quantité</label>
                 <input type="number" name="quantity" id="quantity" min="1" max="10" value="1">

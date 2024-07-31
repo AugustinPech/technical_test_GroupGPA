@@ -12,7 +12,7 @@
                         <a class="nav-link active text-white" aria-current="page" href="?route=home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="">About us</a>
+                        <a class="nav-link text-white" href="?route=aboutUs">About us</a>
                     </li>
                     <?php if (isset($listCategories)) : ?>
                         <li class="nav-item dropdown">
