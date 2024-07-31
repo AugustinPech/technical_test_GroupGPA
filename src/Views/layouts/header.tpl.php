@@ -10,35 +10,40 @@
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="?route=home">Home</a>
                     </li>
-                    <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-                </li> -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle <?= isset($listCategories) ? " text-white " : " disabled "; ?>" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categories
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <?php
-                            foreach ($listCategories as $id => $name) : ?>
-                                <li><a href="?route=category&category=<?= $name ?>"><?= $name ?></a></li>
-                            <?php endforeach; ?>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="">About us</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle <?= isset($listProducts) ? " text-white " : " disabled "; ?>" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <?php
-                            foreach ($listProducts as $product) : ?>
-                                <li>
-                                    <a href="?route=product&product=<?= $product['id'] ?>" class= "d-block text-truncate">
-                                        <?= $product['title'] ?>
-                                    </a>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </li>
+                    <?php if (isset($listCategories)) : ?>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <?php
+                                foreach ($listCategories as $id => $name) : ?>
+                                    <li><a href="?route=category&category=<?= $name ?>"><?= $name ?></a></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </li>
+                    <?php endif; ?>
+                    <?php if (isset($listProducts)) : ?>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <?php
+                                foreach ($listProducts as $product) : ?>
+                                    <li>
+                                        <a href="?route=product&product=<?= $product['id'] ?>" class="d-block text-truncate">
+                                            <?= $product['title'] ?>
+                                        </a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </li>
+                    <?php endif; ?>
+
                 </ul>
                 <!-- <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
