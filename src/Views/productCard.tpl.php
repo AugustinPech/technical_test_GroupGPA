@@ -1,4 +1,4 @@
-<div class="rounded card m-2 d-flex flex-column justify-content-between align-items-center" style="width: 300px;height: 400px;">
+<div class="rounded card m-2 flex-column justify-content-between align-items-center" style="width: 300px;height: 400px;" data-category="<?= $product['category']; ?>" data-price="<?= $product['price']?>" data-rating="<?= $product['rating']['rate']?>">
   <div class="border-bottom p-2 w-80 d-flex flex-column align-items-center justify-content-center" style="height:60%; width: 80%;">
     <img id="productImg" src="<?= $product['image']; ?>" class="card-img-top" alt="<?= $product['title']; ?>" style="max-width: 60%;">
   </div>
