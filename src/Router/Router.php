@@ -9,10 +9,11 @@ class Router {
         'home' => '../src/Controllers/HomeController.php',
         'category'=> '../src/Controllers/CategoryCatalogController.php',
         'product' => '../src/Controllers/ProductController.php',
-        '404' => '../src/Views/Errors/404.php'
+        '404' => '../src/Views/errors/error404.tpl.php'
     ];
     public function route($requestedRoute, $requestedCategory, $requestedProductId) {
         $requestedRoute = isset($requestedRoute) ? (array_key_exists($requestedRoute, $this->routes) ? $requestedRoute : '404' ) : 'home';
+        // var_dump($requestedRoute);
         switch ($requestedRoute) {
             case 'home':
                 $route= $this->routes[$requestedRoute];
@@ -33,7 +34,8 @@ class Router {
                 $controller->productDetail($requestedProductId);
                 break;
             case '404':
-                $requestedRoute = '404';
+                $route= $this->routes[$requestedRoute];
+                require_once $route;
                 break;
         }
     }

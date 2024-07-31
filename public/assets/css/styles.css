@@ -1,6 +1,7 @@
 h1::first-letter {
     text-transform: uppercase;
 }
+
 li::first-letter {
     text-transform: uppercase;
 }
@@ -8,15 +9,18 @@ li::first-letter {
 /* Default: Display carousel */
 #carouselButton,
 #carouselCatalog {
-  display: block;
+    display: block;
 }
-/* Default: don't display flexbox */ 
+
+/* Default: don't display flexbox */
 #flexCatalog {
-  display: none;
+    display: none;
 }
+
 .card:hover {
     box-shadow: 0 5px 7px rgba(0, 123, 255, 0.2);
 }
+
 #productImg {
     width: auto;
     height: auto;
@@ -24,11 +28,50 @@ li::first-letter {
 }
 
 @media (min-width: 768px) {
+
     #carouselCatalog,
     #carouselButton {
         display: none
     }
+
     #flexCatalog {
         display: flex;
     }
+}
+
+.page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: 'Arvo', serif;
+}
+
+.page_404 img {
+    width: 100%;
+}
+
+.four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+}
+
+
+.four_zero_four_bg h1 {
+    font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+    font-size: 80px;
+}
+
+.link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.contant_box_404 {
+    margin-top: -50px;
 }
