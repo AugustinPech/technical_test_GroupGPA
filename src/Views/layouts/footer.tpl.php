@@ -1,7 +1,7 @@
 </main>
 
 <div class=" my-3 py-3 border-top border-secondary" style="width:100vw">
-    <div class="d-flex justify-content-around">
+    <div class="d-flex flex-wrap flex-md-nowrap justify-content-around">
         <div class="text-center">
             <img class="col-2" src="images/assurance.png"/>
             <div>100% Securisé</div>

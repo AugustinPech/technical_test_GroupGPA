@@ -19,6 +19,7 @@ h1::first-letter {
     height: auto;
     object-fit: contain;
 }
+
 @media (min-width: 768px) {
     #carouselCatalog,
     #carouselButton {
