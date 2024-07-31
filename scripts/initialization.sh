@@ -32,11 +32,6 @@ echo "========= creating project ==========="
 cd /var/www/ || exit
 mkdir -p "$project_name"
 cd "$project_name" || exit
-git init
-
-mkdir -p src/{Controllers,Models,Views}
-touch src/index.php
-echo "<?php phpinfo();" > src/index.php
 
 echo "========= creating apache2 virtual host ==========="
 sudo touch /etc/apache2/sites-available/"$project_name".conf
@@ -55,8 +50,8 @@ sudo tee /etc/apache2/sites-available/"$project_name".conf << EOF
         SetHandler "proxy:unix:/var/run/php/php8.3-fpm.sock|fcgi://localhost/"
     </FilesMatch>
 
-    ErrorLog ${APACHE_LOG_DIR}/${project_name}_error.log
-    CustomLog ${APACHE_LOG_DIR}/${project_name}_access.log combined
+    ErrorLog /var/log/apache2/${project_name}_error.log
+    CustomLog /var/log/apache2/${project_name}_access.log combined
 </VirtualHost>
 EOF
 
@@ -69,4 +64,7 @@ sudo systemctl reload apache2 && echo "Apache2 reloaded"
 
 echo "========= adding project to /etc/hosts ==========="
 sudo sed -i "/^127\.0\.0\.1\s\+\*\.local$/c\127.0.0.1  ${project_name}.local" /etc/hosts
+
+echo "nice! you now have to clone the repository to /var/www/${project_name} and run:"
+echo "composer install"
 

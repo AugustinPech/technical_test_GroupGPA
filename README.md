@@ -1,3 +1,9 @@
+## Installation of the project
+you will find in `scripts` :
+|     File name     |                             Fucntion                              |          Example of use           |
+| :---------------: | :---------------------------------------------------------------: | :-------------------------------: |
+| initialization.sh |          creates a vhost and a directory for the project          | `./initialization.sh projectName` |
+|  installation.sh  | clones the repository and  installs the dependances with composer | `./installation.sh projectName` |
 # PHP Technical Interview
 ## Subject
 ### Goal
@@ -14,12 +20,34 @@ Build a mini website using PHP8.3-FPM and Bootstrap to display data from the Fak
 - Mobile-first design.
 - Total development time should not exceed ~20 hours.
 
+### Understanding the subject
+As I understand the subject I am supposed to show how i can manage to implement :
+- filters for the products shown on a page
+- responsive slider for mobile use
+- a nice page t oshow the details of one product
+
+As the subject gives a few informations i took the opportunity to consider it a a 'carte blanche' on some features.
+
+I will make :
+- a **Homepage** showing
+  - a list of products with potential filters
+        
+        this is what i understand of "products from one category, and a list of categories"
+- a **Product Listing Page** showing
+    - all the products from one category
+    - a responsive slider / flexbox show
+
+- a **Product Detail Page** showing
+    - all the informations there is about a product
 ## How i intend to do it
 ### Timing
 I started to work a few minutes ago on Monday the 29th of july 2024 around 16h20.
+
 I have a few days off, which i intend to delegate to this work. I start with an overview of how i planned to work.
+
 I will spend a few hours today working on the project initialization.
 Additionaly , i will work 2 full days tomorrow (tuesday) and the day after tomorow (wenesday) for a total of ~ 20h.
+
 I intend to make an aditional documentation at the end of the project to give a feedback about how it went. I wiil not count this as "working time" as it is supposed to be dedicated to the feedback.
 
 ### Initial configuration
@@ -69,3 +97,38 @@ Then I will add the Bootstrap 5 cdn.
 Later I might add a proper installation of Bootstrap.
 
 #### Add style
+
+## Result
+
+### Feedback
+I am pretty proud of what i achieved considering the given time and constraints.
+
+### Timing
+I worked with a lot of interuptions due to the fact that I am on "vacation" with my family.
+
+The table below displays the sessions of work i spent on this project.
+
+| day | session | hours | topic |
+| :---: | :---: | :---: | :---: |
+| 29/07/2024 | 16h30 - 22h00 | ~5h30 | setting up the work flow and major features like homepage |
+| 30/07/2024 | 12h00 - 22h30 | ~10h30 | product detailed page |
+| 31/07/2024 | 12h00 - 13h30 | ~1h30 | make home page look nice |
+| 31/07/2024 | 14h00 - 16h00 | ~2h00 | update doc and installation script |
+
+I spent a total of 19h30 on this project.
+
+### Discution
+| Page | Features in subject | Features in delivery | Features to add |
+| :-: | :-:| :-:| :-:|
+| Homepage | <span style="color:red;"> Slider </span> <br> <span style="color:blue;">Products from one category</span> <br> <span style="color:green;">List of categories</span> <br> | <span style="color:grey;">List of products filtered by category </span> <br> <span style="color:green;">List of categories</span> <br> <span style="color:purple;"> options for filtering </span><br> <span style="color:blue;">Products from one category</span>| <span style="color:red;"> Slider </span> <br><span style="color:purple;"> options for sorting and searching </span> |
+| Product Listing Page | <span style="color:grey;">List of products filtered by category </span> | <span style="color:red;"> Slider </span> <br> <span style="color:blue;">Products from one category</span>| <span style="color:grey;"> filters </span> |
+| Product Detail Page | <span style="color:dark;">Detailed view of a single product</span> <br> <span style="color:purple;"> options for sorting, filtering and searching </span>| <span style="color:dark;">Detailed view of a single product</span>|<span style="color:purple;"> options for sorting, filtering and searching </span>|
+
+
+### Improvement
+There is still a lot to do :
+- most of the site is in english but some features are still in french (I noticed it at the end)
+- the JS script for the filters on the home page should be in a separated file
+- the installation script is just a raw shell script (could be an Ansible idempotent script)
+
+As it wasn't requested , there is no form management in this project. To my aprasiation, it would have been the next step.
