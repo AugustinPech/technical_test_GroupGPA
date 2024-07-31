@@ -1,13 +1,16 @@
-/* Default: Display carousel */
 h1::first-letter {
     text-transform: uppercase;
 }
+li::first-letter {
+    text-transform: uppercase;
+}
 
+/* Default: Display carousel */
 #carouselButton,
 #carouselCatalog {
   display: block;
-  
 }
+/* Default: don't display flexbox */ 
 #flexCatalog {
   display: none;
 }

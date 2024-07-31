@@ -64,7 +64,7 @@
             <?php
               foreach ($listCategories as $id => $name) : ?>
                 <li>
-                  <a href="?route=category&category=<?= $name ?>"><?= $name ?></a>
+                  <a class="text-black" style="text-decoration:none" href="?route=category&category=<?= $name ?>"><?= $name ?></a>
                 </li>
             <?php endforeach; ?>
           </ul>
