@@ -1,9 +1,32 @@
+</main>
+
+<div class=" my-3 py-3 border-top border-secondary" style="width:100vw">
+    <div class="d-flex justify-content-around">
+        <div class="text-center">
+            <img class="col-2" src="images/assurance.png"/>
+            <div>100% Securisé</div>
+        </div>
+        <div class="text-center">
+            <img class="col-2" src="images/logistics-delivery (1).png"/>
+            <div>Livraison Gratuite</div>
+        </div>
+        <div class="text-center">
+            <img class="col-2" src="images/logistics-delivery.png"/>
+            <div>Retour Gratuit</div>
+        </div>
+        <div class="text-center">
+            <img class="col-2" src="images/service-client.png"/>
+            <div>Support 24/7</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
-</main>
 <section class="">
   <!-- Footer -->
-  <footer class="bg-body-tertiary text-center text-md-start bg-secondary">
+  <footer class="bg-body-tertiary text-center text-md-start ">
     <!-- Grid container -->
     <div class="container p-4 ">
       <!--Grid row-->
@@ -32,6 +55,8 @@
         <!--Grid column-->
 
         <!--Grid column-->
+        <?php if (isset($listCategories)) : ?>
+          
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase mb-0">Categories</h5>
 
@@ -44,6 +69,7 @@
             <?php endforeach; ?>
           </ul>
         </div>
+        <?php endif; ?>
         <!--Grid column-->
       </div>
       <!--Grid row-->
